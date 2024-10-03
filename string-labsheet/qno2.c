@@ -1,3 +1,4 @@
+//WAP to print entered string into uppercase
 #include<stdio.h>
 #include<string.h>
 int main()
