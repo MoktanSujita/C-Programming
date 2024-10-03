@@ -6,7 +6,7 @@ int main()
     char str[50];
     int lo=0,up=0,sp=0;
     printf("Enter any string:");
-    scanf("%[^\n]%*c",str);
+    scanf("%[^\n]%*c",str);//takes space too
     for(int i=0;str[i]!=0;i++)
     {
         if(str[i]>=97 && str[i]<=122)
