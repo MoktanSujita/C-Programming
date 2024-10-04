@@ -15,7 +15,8 @@ int main()
     {
         printf("The larger string:%s",str2);
     }
-    else //if both are equal it returns 0
+    else  
+    //if both are equal it returns 0
     {
         printf("Both strings are equal!");
     }
