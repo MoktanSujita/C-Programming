@@ -8,7 +8,8 @@ int main()
     scanf("%d",&n);
     char str[n+1],rev[n+1];
     printf("Enter any string:");
-    scanf("%s",str);
+    getchar();
+    scanf("%[^\n]",str);
     l=strlen(str);//finds length of string
     for(int i=0;str[i]!=0;i++)
     {
