@@ -1,25 +1,32 @@
-//WAP to concatinate two strings without using library function strcat()
+//WAP to sort 10 names in alphabetical order
 #include<stdio.h>
 #include<string.h>
 int main()
 {
-    int n;
-    printf("Enter the maximum no of string:");
-    scanf("%d",&n);
-    char str1[n+1],str2[n+1],cat[500];
-    int j=0;
-    printf("Enter the first string:");
-    scanf("%s",str1);
-    printf("Enter the second string:");
-    scanf("%s",str2);
-    strcpy(cat,str1);
-    int l=strlen(str1);
-    for(int i=l;i<500;i++)
+    char name[10][500],s[500];//2D array for name
+    printf("Enter the names:");
+    for(int i=0;i<10;i++)
     {
-       cat[i]=str2[j];
-       j++;
+        scanf("%s",name[i]);
     }
-    printf("The concatination of two strings:%s",cat);
+    for(int i=0;i<10;i++)
+    {
+        for(int j=i+1;j<10;j++)
+        {
+            if(strcmp(name[i],name[j])>0)//Comparing strings
+            {
+                strcpy(s,name[i]);//swaping the values
+                strcpy(name[i],name[j]);
+                strcpy(name[j],s);
+            }
+        
+        }
+       
+    }
+    printf("Name in alphabetical order:\n");
+     for(int i=0;i<10;i++)
+    {
+        printf("%s\n",name[i]);
+    }
     return 0;
-    
 }

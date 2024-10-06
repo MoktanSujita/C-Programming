@@ -1,24 +1,25 @@
-//WAP to compare two strings and print larger one
+//WAP to concatinate two strings without using library function strcat()
 #include<stdio.h>
 #include<string.h>
 int main()
 {
-    char str[50],str2[50];
-    printf("Enter any two strings:");
-    scanf("%s%s",str,str2);
-    if(strcmp(str,str2)>0)//if first string is greater it returns value greater than 0
+    int n;
+    printf("Enter the maximum no of string:");
+    scanf("%d",&n);
+    char str1[n+1],str2[n+1],cat[500];
+    int j=0;
+    printf("Enter the first string:");
+    scanf("%s",str1);
+    printf("Enter the second string:");
+    scanf("%s",str2);
+    strcpy(cat,str1);
+    int l=strlen(str1);
+    for(int i=l;i<500;i++)
     {
-        printf("The larger string:%s",str);
+       cat[i]=str2[j];
+       j++;
     }
-    else if(strcmp(str,str2)<0)//if first string is smaller it returns value less than 0
-    {
-    {
-        printf("The larger string:%s",str2);
-    }
-    else  
-    //if both are equal it returns 0
-    {
-        printf("Both strings are equal!");
-    }
-    return 0; 
+    printf("The concatination of two strings:%s",cat);
+    return 0;
+    
 }
