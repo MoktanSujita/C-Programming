@@ -1,3 +1,4 @@
+//wap to count no of vowels 
 #include<stdio.h>
 #include<string.h>
 int main()
