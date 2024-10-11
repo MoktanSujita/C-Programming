@@ -12,7 +12,6 @@ int main()
     }
     else if(strcmp(str,str2)<0)//if first string is smaller it returns value less than 0
     {
-    {
         printf("The larger string:%s",str2);
     }
     else  

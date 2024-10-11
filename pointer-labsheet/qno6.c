@@ -24,9 +24,9 @@ int main()
     }
     for(i=0;i<m;i++)
     {
-        for(j=0;i<n;j++)
+        for(j=0;j<n;j++)
         {
-          *(*(sum+i)+j)=*(*(arr+i)+j)+ *(*(arr2+i)+j);
+          sum[i][j]=*(*(arr+i)+j)+ *(*(arr2+i)+j);
         }
     }
     printf("The sum of array elements:\n");

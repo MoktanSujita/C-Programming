@@ -1,3 +1,4 @@
+//WAP to find sum of all the elements of an array
 #include<stdio.h>
 int main()
 { 
