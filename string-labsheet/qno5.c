@@ -6,8 +6,8 @@ int main()
     int n,l;
     printf("Enter the maximum no of string:");
     scanf("%d",&n);
-    char str[n+1],rev[n+1];
     printf("Enter any string:");
+    char str[n+1],rev[n+1];
     getchar();
     scanf("%[^\n]",str);
     l=strlen(str);//finds length of string
@@ -26,4 +26,6 @@ int main()
     }
     return 0;
 }
+
+
     

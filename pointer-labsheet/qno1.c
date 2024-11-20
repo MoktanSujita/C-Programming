@@ -9,6 +9,6 @@ int main()
     char *pc=&c;//pointer to char
     float f; //variable initialization
     float *pf=&f;////pointer to float
-    printf("Memory address \na:%d\t c:%d\t f:%d",*pa,*pc,*pf);
+    printf("Memory address \na:%p\t c:%p\t f:%p",pa,pc,pf);
     return 0;
 }
