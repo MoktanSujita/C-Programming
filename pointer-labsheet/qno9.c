@@ -1,3 +1,4 @@
+//Wap to record age of n no of employees with dynamic memory allocation and count no of employees aged above 80
 #include<stdio.h>
 #include<conio.h>
 int count(int *arr, int n);
